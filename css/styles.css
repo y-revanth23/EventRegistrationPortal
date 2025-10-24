@@ -11,13 +11,11 @@ form {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Input fields */
 input {
   border-radius: 8px;
   padding: 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
   form {
     width: 100%;

@@ -1,17 +1,12 @@
 $(document).ready(function(){
-  // Highlight on focus
   $("#registrationForm input").focus(function(){
     $(this).css("background-color", "#e8f0fe");
   });
-
-  // Validate on blur
   $("#name").blur(function(){
     if($(this).val().length < 3){
       alert("Name must be at least 3 characters long.");
     }
   });
-
-  // Preview button
   $("#previewBtn").click(function(){
     let name = $("#name").val();
     let email = $("#email").val();
@@ -32,8 +27,6 @@ $(document).ready(function(){
       alert("Please fill all fields before previewing.");
     }
   });
-
-  // Final submission
   $("#registrationForm").submit(function(e){
     e.preventDefault();
     alert("Registration Submitted Successfully!");
